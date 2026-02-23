@@ -1,0 +1,39 @@
+#home {
+  background-image: url("https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/home-hero-bg.jpg");
+  height: 100vh;
+}
+
+#home .bg {
+  background-color: #242a56c1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#help,
+#ceo {
+  background-color: var(--e-global-color-astglobalcolor4);
+}
+
+.cards {
+  margin-top: 50px;
+}
+
+.card {
+  font-family: "Karla", sans-serif;
+}
+
+.card p {
+  color: var(--e-global-color-astglobalcolor3);
+}
+
+.card h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.card .icon {
+  color: var(--e-global-color-astglobalcolor0);
+}

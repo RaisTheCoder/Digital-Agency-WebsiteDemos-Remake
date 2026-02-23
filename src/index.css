@@ -1,0 +1,154 @@
+@import "tailwindcss";
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --e-global-color-astglobalcolor0: #6878d6;
+  --e-global-color-astglobalcolor1: #4d61d6;
+  --e-global-color-astglobalcolor2: #242a56;
+  --e-global-color-astglobalcolor3: #393a56;
+  --e-global-color-astglobalcolor4: #eff2ff;
+  --e-global-color-astglobalcolor5: #ffffff;
+  --e-global-color-astglobalcolor6: #eff2ff;
+  --e-global-color-astglobalcolor7: #242a56;
+  --e-global-color-astglobalcolor8: #bfd1ff;
+}
+
+/* Initials */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Button */
+button {
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--e-global-color-astglobalcolor0);
+  padding: 15px 28px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.3s;
+  color: white;
+  font-family: "Karla", sans-serif;
+  width: fit-content;
+}
+
+.button:hover {
+  background-color: var(--e-global-color-astglobalcolor5);
+  color: black;
+}
+
+.button2:hover {
+  background-color: var(--e-global-color-astglobalcolor1);
+  color: white;
+}
+
+/* Heading */
+.page-heading {
+  height: 50vh;
+  z-index: -2;
+  background-image: url("https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/01/about-bg-img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.page-heading .overlay {
+  background-color: #242a56c1;
+  height: 100%;
+  width: 100%;
+}
+
+.page-heading strong {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* Gradients */
+.grad {
+  background: linear-gradient(white, var(--e-global-color-astglobalcolor4) 99%);
+}
+
+.grad-rev {
+  background: linear-gradient(var(--e-global-color-astglobalcolor4), white 99%);
+}
+
+/* Section Stuff.. */
+#help,
+#portfolio,
+#ceo,
+#leadership,
+#customers-sec {
+  padding: 80px 0;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(160px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUps {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+}
+.animate-fadeUps {
+  opacity: 0;
+  animation: fadeUps 0.6s ease-out forwards;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+.animate-delay-3 {
+  animation-delay: 0.25s;
+}
